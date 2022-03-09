@@ -2,11 +2,13 @@
 \alias{halfnorm.randomnr.ci}
 
 \title{
-Confidence intervals for Rosenthal's fail-safe number assuming a half normal distribution with a random number of studies
+Confidence intervals for Rosenthal's fail-safe number assuming a half normal
+distribution with a random number of studies
 }
 
 \description{
-Confidence intervals for Rosenthal's fail-safe number assuming a half normal distribution with a random number of studies.
+Confidence intervals for Rosenthal's fail-safe number assuming a half normal
+distribution with a random number of studies.
 }
 
 \usage{
@@ -24,12 +26,16 @@ A vector with the standard errors of the stat.
 The significance level, set to 0.05 by default.
 }
 \item{type}{
-The type of confidence intervals to construct. Based on distributional assumptions ("dist") or based on the method of moments ("mom") or both "both".
+The type of confidence intervals to construct. Based on distributional
+assumptions ("dist") or based on the method of moments ("mom") or both "both".
 }
 }
 
 \details{
-The function computes confidence intervals assuming a half normal distribution assuming that the number of studies is random and estimating the variance either via MLE or moments or bootstrap as described in Fragkos, Tsagris & Frangos (2014).
+The function computes confidence intervals assuming a half normal distribution
+assuming that the number of studies is random and estimating the variance
+either via MLE or moments or bootstrap as described in Fragkos,
+Tsagris & Frangos (2014).
 }
 
 \value{
@@ -47,20 +53,22 @@ The (1-alpha)\% confidence interval for the true Rosenthal's fail safe number.
 
 \references{
 Konstantinos C. Fragkos, Michail Tsagris and Christos C. Frangos (2014).
-"Publication Bias in Meta-Analysis: Confidence Intervals for Rosenthal's Fail-Safe Number".
-International Scholarly Research Notices, Volume 2014.
+Publication Bias in Meta-Analysis: Confidence Intervals for Rosenthal's
+Fail-Safe Number. International Scholarly Research Notices, Volume 2014.
 }
 
 \author{
 Michail Tsagris and Constantinos Frangos
 
-R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr} and Constantinos Frangos \email{kfragkos@outlook.com}.
+R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}
+and Constantinos Frangos \email{kfragkos@outlook.com}.
 }
 
 \seealso{
-\code{ \link{halfnorm.fixednr.ci} \link{den.plot}, \link{rosenthal}, \link{convergence.rate} }
+\code{ \link{halfnorm.fixednr.ci} \link{den.plot}, \link{rosenthal},
+\link{convergence.rate} }
 }
-%\link{snnorm.nr.ci}
+
 \examples{
 stat <- rnorm(30, 3, 0.2)
 se <- rchisq(30, 1)

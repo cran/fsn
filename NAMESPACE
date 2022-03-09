@@ -1,6 +1,6 @@
 #useDynLib(fsn, .registration = TRUE)
 
-importFrom("Rfast", Rnorm)
+importFrom("Rfast", matrnorm, colsums)
 
 importFrom("graphics", abline, lines, plot)
 importFrom("grDevices", "dev.new")
